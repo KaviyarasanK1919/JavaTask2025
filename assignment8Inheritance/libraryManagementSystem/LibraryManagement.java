@@ -4,13 +4,13 @@ import java.util.Scanner;
 
 public class LibraryManagement {
 	private static int bookID = 1;
-	private static final String ADMIN_ID = "Admin_@#11";
+	private static final String ADMIN_ID = "nakku";
 	private static final String PASSWORD = "AdmIn!@11*";
 	private static long generateUserID = 100;
 	public static void main(String[] args) {
 		Database dataBase = Database.getInstance();
 		
-		dataBase.setUsers(ADMIN_ID, new User( ADMIN_ID,"Default_ID", 0,"", "", PASSWORD));
+		dataBase.setUsers(ADMIN_ID, new User( ADMIN_ID,"Default_ID", 0,"", "", PWORD));
 		
 		dataBase.setBooks(bookID, new Book(bookID++ +"", "Biopic: KING KOHLI","Shiv", 100, "12345"));
 		dataBase.setBooks(bookID, new Book(bookID++ +"", "Master Your Mindset","Ravi Saroj", 230, "12376545"));
